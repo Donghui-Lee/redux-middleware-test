@@ -3,3 +3,6 @@
 # 1. 기본 작업 환경 구성
 
 # 2. 로그 미들웨어 적용 (custom logger / redux-logger)
+
+
+# 3. react-thunk, axios 적용
