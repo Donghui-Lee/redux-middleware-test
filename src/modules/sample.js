@@ -1,5 +1,7 @@
 import { handleActions } from "redux-actions";
 import * as api from "../lib/api";
+import createReuqestThunk from '../lib/createRequestThunk';
+
 
 // 액션 타입 선언
 // 한 요청당 세 개 생성
@@ -14,6 +16,10 @@ const GET_USERS_FAILURE = "sample/GET_USERS_FAILURE";
 // thunk 함수 생성
 // thunk 함수 내부에서는 시작할 때, 성공했을 때, 실패했을 때 다른 액션을 디스패치
 
+export const getPost = createReuqestThunk(GET_POST, api.getPost);
+export const getUsers = createReuqestThunk(GET_USERS, api.getUsers);
+
+/*
 export const getPost = id => async dispatch => {
   // 요청을 시작한 것을 알림
   dispatch({ type: GET_POST });
@@ -57,6 +63,7 @@ export const getUsers = () => async dispatch => {
     throw e;
   }
 };
+*/
 
 // 초기 상태 선언
 // 요청의 로딩 중 상태는 loading 이라는 객체에서 관리
