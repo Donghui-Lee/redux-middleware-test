@@ -4,6 +4,8 @@
 
 # 2. 로그 미들웨어 적용 (custom logger / redux-logger)
 
-# 3. react-thunk, axios 적용
+# 3. redux-thunk, axios 적용
 
 # 4. 리팩토링
+
+# 5. redux-saga 적용
